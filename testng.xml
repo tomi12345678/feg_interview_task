@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "FEG_Interview_Task">
+<listeners>
+	<listener class-name = "utilities.Listeners"/>
+</listeners>
+	<test name = "restAssuredTests" >
+
+	<classes> 
+		<class name = "testCases.v1_pages" />
+		<class name = "testCases.v1_page_id_components" />
+		<class name = "testCases.v1_page_id_components_component_id" />
+	</classes>
+
+	</test>
+</suite>
