@@ -11,6 +11,7 @@
 		<class name = "testCases.v1_pages" />
 		<class name = "testCases.v1_page_id_components" />
 		<class name = "testCases.v1_page_id_components_component_id" />
+		<class name = "testCases.v1_page_id_incidents" />
 	</classes>
 
 	</test>

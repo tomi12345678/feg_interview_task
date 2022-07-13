@@ -1,21 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="25" passed="21" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-13T15:55:49 CEST" name="Default suite" finished-at="2022-07-13T15:55:51 CEST" duration-ms="2264">
+  <suite started-at="2022-07-13T17:31:11 CEST" name="FEG_Interview_Task" finished-at="2022-07-13T17:31:27 CEST" duration-ms="16070">
     <groups>
     </groups>
-    <test started-at="2022-07-13T15:55:49 CEST" name="Default test" finished-at="2022-07-13T15:55:51 CEST" duration-ms="2264">
-      <class name="testCases.v1_page_id_incidents">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.v1_page_id_incidents@16a0ee18]" started-at="2022-07-13T15:55:49 CEST" name="setup" finished-at="2022-07-13T15:55:49 CEST" duration-ms="394" status="PASS">
+    <test started-at="2022-07-13T17:31:11 CEST" name="restAssuredTests" finished-at="2022-07-13T17:31:27 CEST" duration-ms="16070">
+      <class name="testCases.v1_pages">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:11 CEST" name="setup" finished-at="2022-07-13T17:31:12 CEST" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="createEmployee()[pri:0, instance:testCases.v1_page_id_incidents@16a0ee18]" started-at="2022-07-13T15:55:49 CEST" name="createEmployee" finished-at="2022-07-13T15:55:51 CEST" duration-ms="1801" status="PASS">
+        <test-method is-config="true" signature="baseUri()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:12 CEST" name="baseUri" finished-at="2022-07-13T17:31:13 CEST" duration-ms="1881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseUri -->
+        <test-method signature="checkContentLength()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:13 CEST" name="checkContentLength" finished-at="2022-07-13T17:31:13 CEST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentLength -->
+        <test-method signature="checkContentType()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:13 CEST" name="checkContentType" finished-at="2022-07-13T17:31:13 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContentType -->
+        <test-method signature="checkResponseBody()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:13 CEST" name="checkResponseBody" finished-at="2022-07-13T17:31:13 CEST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method signature="checkResponseTime()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:13 CEST" name="checkResponseTime" finished-at="2022-07-13T17:31:13 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method signature="checkStatusCode()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:13 CEST" name="checkStatusCode" finished-at="2022-07-13T17:31:13 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusCode -->
+        <test-method signature="checkStatusLine()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:13 CEST" name="checkStatusLine" finished-at="2022-07-13T17:31:13 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatusLine -->
+        <test-method signature="verifyDeleteStatusCode()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:13 CEST" name="verifyDeleteStatusCode" finished-at="2022-07-13T17:31:14 CEST" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteStatusCode -->
+        <test-method signature="verifyPostStatusCode()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:14 CEST" name="verifyPostStatusCode" finished-at="2022-07-13T17:31:15 CEST" duration-ms="724" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [429] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [429] but found [500]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:1240)
+at org.testng.Assert.assertEquals(Assert.java:1274)
+at testCases.v1_pages.verifyPostStatusCode(v1_pages.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostStatusCode -->
+        <test-method signature="verifyPutStatusCode()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:15 CEST" name="verifyPutStatusCode" finished-at="2022-07-13T17:31:16 CEST" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPutStatusCode -->
+        <test-method signature="verifyQueryParameters()[pri:0, instance:testCases.v1_pages@383bfa16]" started-at="2022-07-13T17:31:16 CEST" name="verifyQueryParameters" finished-at="2022-07-13T17:31:16 CEST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [[]] but found [[{"id":"cl2pxld6h45000iln8lwv81ai3","subdomain":"fortuna1","name":"Fortuna1","logoUrl":null,"faviconUrl":null,"websiteUrl":null,"customDomain":null,"publicEmail":null,"twitter":null,"status":"HASISSUES","subscribeBySms":false,"sendSmsNotifications":true,"language":"en","useLargeHeader":true,"brandColor":"#1E1E1E","okColor":"#00B093","disruptedColor":"#ff8c00","degradedColor":"#ECC94B","downColor":"#8f485d","noticeColor":"#708090","unknownColor":"#DFE0E1","googleAnalytics":null,"smsService":null,"htmlInMeta":null,"htmlAboveHeader":null,"htmlBelowHeader":null,"htmlAboveFooter":null,"htmlBelowFooter":null,"htmlBelowSummary":null,"launchDate":null,"cssGlobal":null,"onboarded":true,"createdAt":"2022-05-03T09:11:29.273Z","updatedAt":"2022-07-13T14:44:20.490Z"}]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [[]] but found [[{"id":"cl2pxld6h45000iln8lwv81ai3","subdomain":"fortuna1","name":"Fortuna1","logoUrl":null,"faviconUrl":null,"websiteUrl":null,"customDomain":null,"publicEmail":null,"twitter":null,"status":"HASISSUES","subscribeBySms":false,"sendSmsNotifications":true,"language":"en","useLargeHeader":true,"brandColor":"#1E1E1E","okColor":"#00B093","disruptedColor":"#ff8c00","degradedColor":"#ECC94B","downColor":"#8f485d","noticeColor":"#708090","unknownColor":"#DFE0E1","googleAnalytics":null,"smsService":null,"htmlInMeta":null,"htmlAboveHeader":null,"htmlBelowHeader":null,"htmlAboveFooter":null,"htmlBelowFooter":null,"htmlBelowSummary":null,"launchDate":null,"cssGlobal":null,"onboarded":true,"createdAt":"2022-05-03T09:11:29.273Z","updatedAt":"2022-07-13T14:44:20.490Z"}]]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testCases.v1_pages.verifyQueryParameters(v1_pages.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyQueryParameters -->
+      </class> <!-- testCases.v1_pages -->
+      <class name="testCases.v1_page_id_incidents">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.v1_page_id_incidents@4229bb3f]" started-at="2022-07-13T17:31:25 CEST" name="setup" finished-at="2022-07-13T17:31:25 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="createEmployee()[pri:0, instance:testCases.v1_page_id_incidents@4229bb3f]" started-at="2022-07-13T17:31:25 CEST" name="createEmployee" finished-at="2022-07-13T17:31:26 CEST" duration-ms="703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createEmployee -->
-        <test-method signature="postIncident()[pri:0, instance:testCases.v1_page_id_incidents@16a0ee18]" started-at="2022-07-13T15:55:51 CEST" name="postIncident" finished-at="2022-07-13T15:55:51 CEST" duration-ms="32" status="FAIL">
+        <test-method signature="getIncidentsList()[pri:0, instance:testCases.v1_page_id_incidents@4229bb3f]" started-at="2022-07-13T17:31:26 CEST" name="getIncidentsList" finished-at="2022-07-13T17:31:26 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIncidentsList -->
+        <test-method signature="getIncidentsSingleRecord()[pri:0, instance:testCases.v1_page_id_incidents@4229bb3f]" started-at="2022-07-13T17:31:26 CEST" name="getIncidentsSingleRecord" finished-at="2022-07-13T17:31:27 CEST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIncidentsSingleRecord -->
+        <test-method signature="postIncident()[pri:0, instance:testCases.v1_page_id_incidents@4229bb3f]" started-at="2022-07-13T17:31:27 CEST" name="postIncident" finished-at="2022-07-13T17:31:27 CEST" duration-ms="11" status="FAIL">
           <exception class="java.net.ConnectException">
             <message>
               <![CDATA[Connection refused: connect]]>
@@ -38,13 +184,9 @@ at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.j
 at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
 at io.restassured.internal.http.HTTPBuilder.post(HTTPBuilder.java:349)
 at io.restassured.internal.http.HTTPBuilder$post$3.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
 at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1195)
 at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -69,8 +211,7 @@ at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groov
 at io.restassured.filter.FilterContext$next.call(Unknown Source)
 at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1686)
 at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor64.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -85,8 +226,7 @@ at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoIn
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
 at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy:300)
 at io.restassured.internal.RequestSpecificationImpl.request(RequestSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:567)
 at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
@@ -137,6 +277,118 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- postIncident -->
       </class> <!-- testCases.v1_page_id_incidents -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testCases.v1_page_id_components_component_id">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.v1_page_id_components_component_id@7fee8714]" started-at="2022-07-13T17:31:20 CEST" name="setup" finished-at="2022-07-13T17:31:20 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setParameters()[pri:0, instance:testCases.v1_page_id_components_component_id@7fee8714]" started-at="2022-07-13T17:31:20 CEST" name="setParameters" finished-at="2022-07-13T17:31:21 CEST" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setParameters -->
+        <test-method signature="deleteRequest()[pri:0, instance:testCases.v1_page_id_components_component_id@7fee8714]" started-at="2022-07-13T17:31:21 CEST" name="deleteRequest" finished-at="2022-07-13T17:31:23 CEST" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteRequest -->
+        <test-method signature="verifyGetSingleRecord()[pri:0, instance:testCases.v1_page_id_components_component_id@7fee8714]" started-at="2022-07-13T17:31:23 CEST" name="verifyGetSingleRecord" finished-at="2022-07-13T17:31:23 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetSingleRecord -->
+        <test-method signature="verifyPutRequest()[pri:0, instance:testCases.v1_page_id_components_component_id@7fee8714]" started-at="2022-07-13T17:31:23 CEST" name="verifyPutRequest" finished-at="2022-07-13T17:31:25 CEST" duration-ms="2172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPutRequest -->
+      </class> <!-- testCases.v1_page_id_components_component_id -->
+      <class name="testCases.v1_page_id_components">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:16 CEST" name="setup" finished-at="2022-07-13T17:31:16 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="baseUri()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:16 CEST" name="baseUri" finished-at="2022-07-13T17:31:16 CEST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseUri -->
+        <test-method signature="checkResponseBody()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:16 CEST" name="checkResponseBody" finished-at="2022-07-13T17:31:16 CEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseBody -->
+        <test-method signature="checkResponseTime()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:16 CEST" name="checkResponseTime" finished-at="2022-07-13T17:31:16 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseTime -->
+        <test-method signature="ckeckStatusCode()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:16 CEST" name="ckeckStatusCode" finished-at="2022-07-13T17:31:16 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ckeckStatusCode -->
+        <test-method signature="verifyConnectionStatus()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:16 CEST" name="verifyConnectionStatus" finished-at="2022-07-13T17:31:16 CEST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [close] but found [keep-alive]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [close] but found [keep-alive]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testCases.v1_page_id_components.verifyConnectionStatus(v1_page_id_components.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConnectionStatus -->
+        <test-method signature="verifyPostGrouping()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:16 CEST" name="verifyPostGrouping" finished-at="2022-07-13T17:31:17 CEST" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostGrouping -->
+        <test-method signature="verifyPostIdIsUnique()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:17 CEST" name="verifyPostIdIsUnique" finished-at="2022-07-13T17:31:18 CEST" duration-ms="744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostIdIsUnique -->
+        <test-method signature="verifyPostRequiredFields()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:18 CEST" name="verifyPostRequiredFields" finished-at="2022-07-13T17:31:19 CEST" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostRequiredFields -->
+        <test-method signature="verifyPostStatusCategoryIsPredefined()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:19 CEST" name="verifyPostStatusCategoryIsPredefined" finished-at="2022-07-13T17:31:19 CEST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostStatusCategoryIsPredefined -->
+        <test-method signature="verifyPostStatusCode()[pri:0, instance:testCases.v1_page_id_components@f736069]" started-at="2022-07-13T17:31:19 CEST" name="verifyPostStatusCode" finished-at="2022-07-13T17:31:20 CEST" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostStatusCode -->
+      </class> <!-- testCases.v1_page_id_components -->
+    </test> <!-- restAssuredTests -->
+  </suite> <!-- FEG_Interview_Task -->
 </testng-results>

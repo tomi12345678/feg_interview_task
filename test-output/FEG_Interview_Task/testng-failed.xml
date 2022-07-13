@@ -9,10 +9,17 @@
       <class name="testCases.v1_page_id_components">
         <methods>
           <include name="baseUri"/>
-          <include name="verifyConnectionStatus"/>
           <include name="setup"/>
+          <include name="verifyConnectionStatus"/>
         </methods>
       </class> <!-- testCases.v1_page_id_components -->
+      <class name="testCases.v1_page_id_incidents">
+        <methods>
+          <include name="postIncident"/>
+          <include name="createEmployee"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.v1_page_id_incidents -->
       <class name="testCases.v1_pages">
         <methods>
           <include name="verifyPostStatusCode"/>

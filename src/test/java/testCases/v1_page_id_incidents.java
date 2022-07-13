@@ -48,25 +48,5 @@ public class v1_page_id_incidents extends testBase {
 		
 		String responseBody = response.getBody().asString();
 		assertEquals(responseBody.contains("cl5ia0lqd61240brn3u8tczbuk"), false);
-	}
-	
-	@Test
-	void postIncident()
-	{
-		httpRequest = RestAssured.given();
-		response = httpRequest.request(Method.POST, "/incidents");
-		JSONObject requestParams = new JSONObject();
-		requestParams.put("name", incident_name);
-		requestParams.put("status", incident_status);
-		requestParams.put("message", incident_message);
-		requestParams.put("components", "component");
-		
-		httpRequest.header("Content-Type", "application/json");
-		httpRequest.body(requestParams.toJSONString());
-		System.out.println(response.statusCode());
-		String responseBody = response.getBody().asString();
-		System.out.println(responseBody);
-	}
-	
-	
+	}	
 }

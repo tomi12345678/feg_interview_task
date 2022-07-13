@@ -102,12 +102,9 @@ public class v1_page_id_components_component_id extends testBase {
 		.pathParams("page_id", pageId, "component_id", created_id);
 		response = httpRequest.request(Method.GET, "https://api.instatus.com/v1/{page_id}/components/{component_id}");
 		assertEquals(response.statusCode(), 500);
-
-		
-
-		
-		
 	}
+	
+	
 		// created at, updated at, siteID is consistent, nameHTML matches name, same for descriptionHtml, order number after DELETE request
 	
 }
